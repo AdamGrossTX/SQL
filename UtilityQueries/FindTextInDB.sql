@@ -1,7 +1,6 @@
 --Change the USING to the DB you want to run this against. 
 USE [CM_ASD]
 
-
 --Change the value to your search term
 DECLARE @Text nvarchar(1000)
 SET @Text = 'TextToFind'
