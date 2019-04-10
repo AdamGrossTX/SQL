@@ -37,7 +37,7 @@
 		CROSS APPLY (SELECT LEFT(c.value,len(c.value) - len(f.value)-1) AS value) g
 		--OSEdition, OSMarketVersion
 		CROSS APPLY (SELECT REPLACE(os.caption0,'(R)','') AS value) aa
-		CROSS APPLY (SELECT REPLACE(aa.value,'®','') AS value) bb
+		CROSS APPLY (SELECT REPLACE(aa.value,'Â®','') AS value) bb
 		CROSS APPLY (SELECT REPLACE(bb.value,'Microsoft Windows ','') AS value) cc
 		CROSS APPLY (SELECT REPLACE(cc.value,'Server ','') AS value) dd
 		CROSS APPLY (SELECT REPLACE(dd.value,'Storage ','') AS value) ff
